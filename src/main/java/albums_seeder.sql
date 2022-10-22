@@ -32,4 +32,4 @@ VALUES ('Michael Jackson', 'Thriller', 1982, 47.3, 'Pop,rock, R&B'),
 ('Pink Floyd', 'The Wall', 1979, 18.7, 'Progressive rock'),
 ('Santana', 'Supernatural', 1999, 20.5, 'Latin rock'),
 ('Guns N Roses', 'Appetite for Destruction', 1987, 21.6, 'Hard rock'),
-('Elton John', 'Goodbye Yellow Brick Road', 1973, 8.5, 'rock, pop rock, glam rock');
+('Elton John', 'Goodbye Yellow Brick Road', 1973, 18.5, 'rock, pop rock, glam rock');
