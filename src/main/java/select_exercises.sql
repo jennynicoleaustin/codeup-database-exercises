@@ -19,4 +19,7 @@ USE codeup_test_db;
 -- Which albums had less than 20 million certified sales
     SELECT 'LESS THAN 20 MILLION SALES';
     SELECT * FROM albums WHERE sales < 20.0;
+
 -- All the albums with a genre of "Rock". Why do these query results not include albums with a genre of "Hard rock" or "Progressive rock"?
+    SELECT 'ROCK GENRE';
+    SELECT * FROM albums WHERE genre = 'Rock';
