@@ -5,10 +5,17 @@ FROM employees
 WHERE last_name LIKE '%e%';
 
 # Find all employees born on Christmas — 842 rows.
-
+SELECT *
+FROM employees
+WHERE month(birth_date) = 12
+  AND day(birth_date) = 25;
 
 # Find all employees hired in the 90s and born on Christmas — 362 rows.
-
+SELECT *
+FROM employees
+WHERE month(birth_date) = 12
+  AND day(birth_date) = 25
+    OR hire_date BETWEEN 1990 AND 1999;
 
 # Change the query for employees hired in the 90s and born on Christmas such that the first result is the oldest employee who was hired last. It should be Khun Bernini.
 
