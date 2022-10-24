@@ -30,3 +30,7 @@ ORDER BY COUNT(*) DESC;
 
 
 # Update your query for 'Irena', 'Vidya', or 'Maya'. Use count(*) and GROUP BY to find the number of employees for each gender with those names. Your results should be:
+SELECT first_name, gender, COUNT(*)
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+GROUP BY gender, first_name;

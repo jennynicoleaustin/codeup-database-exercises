@@ -22,7 +22,7 @@ FROM employees
 WHERE first_name = 'Irena' || 'Vidya' || 'Maya';
 
 # Add a condition to the previous query to find everybody with those names who is also male — 441 rows.
-SELECT DISTINCT first_name, gender
+SELECT first_name, gender
 FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya') AND gender = 'M';
 
