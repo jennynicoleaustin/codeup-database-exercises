@@ -34,3 +34,5 @@ SELECT first_name, gender, COUNT(*)
 FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 GROUP BY gender, first_name;
+ USE join_test_db;
+DROP DATABASE join_test_db;

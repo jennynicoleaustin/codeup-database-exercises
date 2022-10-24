@@ -35,28 +35,28 @@ USE join_test_db;
 #        ('jane', 'jane@example.com', null),
 #        ('mike', 'mike@example.com', null);
 
-SHOW TABLES;
-DESCRIBE roles;
-SHOW INDEX from roles;
-SELECT * from roles;
-DESCRIBE users;
-SHOW INDEX from users;
-SELECT * from users;
-
-# JOIN/ INNER JOIN
-SELECT users.name as user_name, roles.name as role_name
-FROM users
-JOIN roles ON users.role_id = roles.id;
-
-#  LEFT JOIN
-
-SELECT users.name AS user_name, roles.name AS role_name
-FROM users
-         LEFT JOIN roles ON users.role_id = roles.id;
-
-SELECT users.name AS user_name, roles.name AS role_name
-FROM users
-         RIGHT JOIN roles ON users.role_id = roles.id;
+# SHOW TABLES;
+# DESCRIBE roles;
+# SHOW INDEX from roles;
+# SELECT * from roles;
+# DESCRIBE users;
+# SHOW INDEX from users;
+# SELECT * from users;
+#
+# # JOIN/ INNER JOIN
+# SELECT users.name as user_name, roles.name as role_name
+# FROM users
+# JOIN roles ON users.role_id = roles.id;
+#
+# #  LEFT JOIN
+#
+# SELECT users.name AS user_name, roles.name AS role_name
+# FROM users
+#          LEFT JOIN roles ON users.role_id = roles.id;
+#
+# SELECT users.name AS user_name, roles.name AS role_name
+# FROM users
+#          RIGHT JOIN roles ON users.role_id = roles.id;
 
 # Associative table
 USE employees;
@@ -68,3 +68,4 @@ FROM employees as e
               ON d.dept_no = de.dept_no
 WHERE de.to_date = '9999-01-01' AND e.emp_no = 10001;
 
+DROP DATABASE join_test_db;
