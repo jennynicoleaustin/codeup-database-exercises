@@ -57,3 +57,5 @@ FROM employees as e
          JOIN departments as dm
               ON d.dept_no = dm.dept_no
 WHERE de.to_date = '9999-01-01';
+
+# mysql> select MAX(Number) from DemoTable;
