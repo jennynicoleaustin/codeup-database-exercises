@@ -1,4 +1,4 @@
-CREATE DATABASE join_test_db;
+# CREATE DATABASE join_test_db;
 
 USE join_test_db;
 CREATE TABLE roles
@@ -64,7 +64,7 @@ FROM users
 USE join_test_db;
 SHOW TABLES;
 
-SELECT roles.name, COUNT(users.name)
+SELECT roles.name, COUNT(users.id)
     FROM roles
     JOIN users ON roles.id = users.role_id
     GROUP BY roles.name;
