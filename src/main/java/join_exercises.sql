@@ -36,7 +36,6 @@ FROM employees as e
         JOIN titles t on e.emp_no = t.emp_no
 WHERE de.to_date = '9999-01-01' AND d.dept_no = 'd009'
 GROUP BY title;
-
 # Find the current salary of all current managers.
 SELECT CONCAT(e.first_name, ' ', e.last_name) AS full_name, s.salary as salary
 FROM employees as e
